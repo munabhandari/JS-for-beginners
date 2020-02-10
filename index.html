@@ -62,7 +62,17 @@
         document.write("<h3>Checking if MADAM is palindrome</h3>")
         document.write('<br> True')
 
+        var muna = {
+            fname: 'muma',
+            lname: 'bhandari',
+            age: 29, address: 'Balkhu',
+            fullname: function () {
+                this.fname = this.fname[0].toUpperCase() + this.fname.slice(1);
+                this.lname = this.lname[0].toUpperCase() + this.lname.slice(1);
 
+                return this.fname + ' ' + this.lname;
+            }
+        }
     </script>
 </body>
 
