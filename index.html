@@ -9,28 +9,40 @@
 </head>
 
 <body>
+    <a target="_blank" href="https://github.com/munabhandari/JS-for-beginners/blob/master/index.html">See the source code in Github</a>
     <script>
         // WAP to generate even numbers form 1 to 100
         // Variable
-        for (count = 5; count <= 95; count = count + 10) {
+        
+        document.write('<h2>Numbers less than 100 divisible by 5 but not by 10</h2>');
+        for (let count = 5; count <= 95; count = count + 10) {
             document.write(count, ', ')
         }
-        document.write('<br>')
+        document.write('<hr>')
         document.write('<br>')
 
         //WAP to generate 2,5,8,11,14,17,20.....
-        for (count = 2; count <= 100; count = count + 3) {
+        for (let count = 2; count <= 100; count = count + 3) {
             document.write(count, ', ')
         }
-        document.write('<br>')
+        document.write('<hr>')
         document.write('<br>')
 
         //WAP to generate 2,5,9,14,20,27,35
 
-        for (i = 3, count = 2; count <= 100; count = count + i, i++) {
+        for (let i = 3, count = 2; count <= 100; count = count + i, i++) {
             document.write(count, ', ')
-
         }
+
+        document.write('<hr>')
+        document.write('<h2>Fibonacci Numbers</h2>')
+        // WAP to generate Fibonacci Number
+        // 1,1,2,3,5,8,13,21,...
+        
+        for (let i = 1, count = 0; count <= 100; i = i + count, count = i - count) {
+            document.write(count, ',')
+        }
+        document.write('<br>')
     </script>
 </body>
 
